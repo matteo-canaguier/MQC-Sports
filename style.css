@@ -1,0 +1,148 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap");
+
+@import url("components/container.css");
+@import url("components/banner.css");
+@import url("components/button.css");
+
+
+
+h1
+{
+	color: black;
+}
+
+h2
+{
+	color: red;
+}
+
+body
+{
+	background-image: url("images/arriere_plan.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+#carte
+{
+	width: 900px;
+	margin: 0 auto;
+	background-color: white; 
+	text-align: center;
+	align-content: center;
+}
+
+.banner {
+	background-image: linear-gradient(225deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 50%), url(Images/banniere.png);
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+}
+
+.container {
+	text-align: center;
+	vertical-align: middle;
+	padding: 300px 0px;
+}
+
+ul li
+{
+	list-style-type: none;
+}
+
+nav.menu-nav ul li.btn{
+	display: inline-block;
+}
+
+nav.menu-nav ul li.btn a{
+	color: white;
+	background-color: red;
+	text-decoration: none;
+	padding: 7px
+}
+
+nav.menu-nav ul li.btn:hover a{
+	color: red;
+	background-color: white;
+	transition: 0.2s all;
+}
+
+
+.btnYT a{
+	color: white;
+	background-color: #6393C1;
+	text-decoration: none;
+	padding: 8px;
+	border-radius: 4px;
+}
+
+.btnYT:hover a{
+	color: red;
+	background-color: white;
+	transition: 0.2s all;
+}
+
+#logo {
+	float: left;
+}
+
+#activites {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.activite	{
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	margin: 10px 10px;
+	flex-grow: 1;
+}
+
+.activite	h3 {
+	font-size: 21px;
+}
+
+#texte{
+	float: left;
+    text-align: left;
+    margin-left: 2em;
+    margin-top: 2em;
+    font-size: 20px;
+}
+
+#logo-texte{
+	display: inline-block;
+	margin: 0 auto;
+}
+
+#sous-menu{
+	display: none;
+	position: absolute;
+	padding-inline-start: 5px;
+	/* display: inline-block; */
+}
+li.btn:hover ul#sous-menu {
+	display: block;
+}
+
+#sous-menu li{
+	color: white;
+	background-color: red;
+	text-decoration: none;
+	padding: 3px;
+	border: 1px solid #000;
+	position: relative;
+	margin: -8px auto;
+}
+
+#sous-menu li:hover{
+	color: red;
+	background-color: white;
+	transition: 0.2s all;
+}
